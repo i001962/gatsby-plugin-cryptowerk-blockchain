@@ -1,4 +1,4 @@
-# gatsby-plugin-crypowerk-blockchain
+# gatsby-plugin-cryptowerk-blockchain
 
 > This plugin is in _beta_ and not officially supported yet
 >
@@ -9,12 +9,12 @@ Gatsbyjs plugin that uses the Cryptowerk blockchain-as-a-service (BaaS) to creat
 With these digital seals, any public folder build can now be matched to its original to verify proof
 of integrity.
 
-When you run `gatsby build`, it will hash and seal the public folder using crypowerk.
+When you run `gatsby build`, it will hash and seal the public folder using cryptowerk.
 
 Here we have an example that will work with the default configuration of `gatsby new`
 
 ```sh
-$ yarn add gatsby-plugin-crypowerk-blockchain
+$ yarn add gatsby-plugin-cryptowerk-blockchain
 ```
 
 ## Quick start
@@ -41,7 +41,7 @@ require('dotenv').config({
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-crypowerk-blockchain`, // add to bottom of plugins list after all data has been written to public folder
+      resolve: `gatsby-plugin-cryptowerk-blockchain`, // add to bottom of plugins list after all data has been written to public folder
       options: { // For sealing you need the API Key and API Credential for your Cryptowerk.com account.
         apiKey: process.env.CRYPTOWERK_APIKEYS, // Concatenation of the API key and secret separated by a space.
         hashoutputfile: './public/hashtree.json', // Optional hash tree will be stored to this file

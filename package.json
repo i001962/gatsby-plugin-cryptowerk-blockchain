@@ -1,9 +1,11 @@
 {
   "name": "gatsby-plugin-cryptowerk-blockchain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "gatsby",
+    "gatsbyjs",
     "blockchain",
+    "crypto",
     "cryptowerk",
     "gatsby-plugin"
   ],

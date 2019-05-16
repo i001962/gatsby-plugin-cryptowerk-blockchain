@@ -19,7 +19,7 @@ $ yarn add gatsby-plugin-cryptowerk-blockchain
 
 ## Quick start
 
-1. Signup for a [Cryptowerk account](https://cryptowerk.com/)  
+1. Signup for a [Cryptowerk account](https://cryptowerk.com/?utm_source=github&utm_campaign=gatsby-plugin-cryptowerk-blockchain)  
 ```
 Get free developer account: https://developers.cryptowerk.com/platform/portal/register.html?p=Trial
 ```

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-cryptowerk-blockchain",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": [
     "gatsby",
     "gatsbyjs",
@@ -12,7 +12,7 @@
   "repository": "i001962/gatsby-plugin-cryptowerk-blockchain",
   "license": "MIT",
   "author": "i001962",
-  "description": "A gatsby plugin to push hash of build folder to blockchain to assure data integrity",
+  "description": "A gatsby plugin to push hash of build folder into blockchain to assure data integrity",
   "dependencies": {
     "folder-hash": "^3.0.0",
     "fs": "0.0.1-security",

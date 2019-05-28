@@ -56,9 +56,8 @@ module.exports = {
 
 This is the very first version of the plugin and isn't yet officially supported. Please leave all your feedback in GitHub issues 😊
 
-# TODO
-A future version will:
-1 - pass Cryptowerk ALL of the leaf level hashes from Gatsby's public folder
-2 - generate a balance merkel tree with a single root hash that 
-3 - write the root has as a transaction to one or more blockchains.
-4 - Cryptowerk Seals are created for each file enabling data integrity to be verified quickly.
+# TODO A future version will:
+1. pass Cryptowerk ALL of the leaf level hashes from Gatsby's public folder
+2. generate a balance merkel tree with a single root hash that
+3. write the root hash as a transaction to one or more blockchains.
+4. Cryptowerk Seals are created for each file enabling data integrity to be verified quickly.

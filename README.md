@@ -9,7 +9,7 @@ Gatsbyjs plugin that uses the Cryptowerk blockchain-as-a-service (BaaS) to creat
 With these digital seals, the public folder from a gatsby build may now be matched to its original to verify proof
 of integrity. Learn more in the [Cryptowerk developer portal](https://developers.cryptowerk.com/platform/index.jsp)  
 
-When you run `gatsby build`, this plugin will hash and seal the content of the public folder. First by using [folder-hash](https://www.npmjs.com/package/folder-hash) and then calling Cryptowerk API to take care of writing to the blockchains of your choosing.
+When you run `gatsby build`, this plugin will hash and seal the content of the public folder. First by using [folder-hash](https://www.npmjs.com/package/folder-hash) and then calling Cryptowerk API to take care of writing to the blockchains of your choosing. In this version hashes are propagated upwards, the hash that is returned for a folder is generated over all the hashes of its children and only 1 hash if pushed to Cryptowerk and subsequently the blockchains of your choosing.
 
 Here we have an example that will work with the default configuration of `gatsby new`
 
@@ -55,3 +55,10 @@ module.exports = {
 # Feedback
 
 This is the very first version of the plugin and isn't yet officially supported. Please leave all your feedback in GitHub issues 😊
+
+# TODO
+A future version will:
+1 - pass Cryptowerk ALL of the leaf level hashes from Gatsby's public folder
+2 - generate a balance merkel tree with a single root hash that 
+3 - write the root has as a transaction to one or more blockchains.
+4 - Cryptowerk Seals are created for each file enabling data integrity to be verified quickly.

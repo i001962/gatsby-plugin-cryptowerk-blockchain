@@ -23,8 +23,8 @@ async function hashnow(hashoutputfile) {
   const options = {
       algo: 'sha256',       // see crypto.getHashes() for options
       encoding: 'hex',
-      folders: { include: ['public'] },
-      files: { include: ['*.*'] }
+      folders: { include: ['**.*', '**'] }, // Fine tune selection https://github.com/marc136/node-folder-hash#options-object-properties
+      files: { include: ['**.*'] }
   };
   const hashTree = await hashElement('public', options);
   // console.log(` hashTree.hash ${hashTree.hash}\n`);

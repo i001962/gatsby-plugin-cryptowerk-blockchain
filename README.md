@@ -13,7 +13,7 @@ When you run `gatsby build`, this plugin will hash and seal the content of the p
 
 Here we have an example that will work with the default configuration of `gatsby new`
 
-```sh
+```shell
 $ yarn add gatsby-plugin-cryptowerk-blockchain
 ```
 
@@ -25,7 +25,7 @@ Get free developer account: https://developers.cryptowerk.com/platform/portal/re
 ```
 2. Add credentials to a .env file, which you won't commit, or set the environment variable before running `gatsby build`
 
-```env
+```
 // .env.production
 CRYPTOWERK_APIKEYS=XXX
 ```
